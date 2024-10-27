@@ -5,254 +5,306 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 13 devlopment | Home page design</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- google fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-    <!-- font awesome -->
+    <title>Zyroux</title>
+    <meta name="description" content="Project 13 Development offers expert consulting and custom technology solutions for startups and SMEs, empowering businesses to grow through digital transformation.">
+    <meta name="keywords" content="consulting, digital solutions, business growth, startups, SMEs, strategy planning, audit, insurance, digital transformation">
+    
+    <!-- Structured Data for SEO -->
+    <!-- <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Zyroux",
+      "url": "https://yourwebsite.com",
+      "logo": "https://yourwebsite.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-787-827-7632",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://www.facebook.com/YourBusiness",
+        "https://www.linkedin.com/company/YourBusiness",
+        "https://twitter.com/YourBusiness"
+      ]
+    }
+    </script> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a20698c67c.js" crossorigin="anonymous"></script>
 
-    <!-- Calendly link widget begin -->
+    <!-- Calendly widget -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/ruizigor16/30min', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: undefined }); }</script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            Calendly.initBadgeWidget({
+                url: 'https://calendly.com/ruizigor16/30min',
+                text: 'Book Your Free Consultation Now!',
+                color: '#0069ff',
+                textColor: '#ffffff',
+                branding: undefined
+            });
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- nav  -->
-
-    <nav>
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-main-container">
                 <div class="logo">
-                    <h2>Zyruox <span>.</span> </h2>
+                    <h2>Zyroux<span>.</span></h2>
                 </div>
                 <div class="navbar">
                     <ul>
-                        <li>
-                            <a href="#">Home</a>
-                            <a href="#">About</a>
-                            <a href="#">Services</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Contact</a>
-                        </li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- header  -->
+    <!-- Header -->
     <header>
         <div class="header-container">
             <div class="header-hero-container">
+                <video autoplay muted loop id="backgroundVideo">
+                    <source src="video.mp4" type="video/mp4">
+                </video>
                 <div class="header-content">
-                    <h3>COMMITED TO SUCCESS</h3>
-                    <h1>We help to grow your business</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro similique vitae tenetur commodi?
-                        Veritatis, accusantium.</p>
+                    <h3>COMMITTED TO SUCCESS</h3>
+                    <h1>Digital Transformation Services for Your Business</h1>
+                    <p>At Zyroux, we offer specialized digital transformation services to help businesses transition into the digital age. Our dedicated teams of software developers, automation experts, and digital strategists work to streamline processes and build custom applications that meet your unique business needs. Let us drive your growth through tailored digital solutions.</p>
                     <div class="primary-btn">
-                        <a href="#">OUR SERVICES</a>
+                        <a href="#service">OUR SERVICES</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- services section  -->
-    <section id="service">
+    <!-- Services Section -->
+    <!-- <section id="service">
         <div class="service-container">
             <div class="service-content-container">
                 <div class="service-content">
                     <h3>OUR TOP SERVICES</h3>
-                    <h1>Our Best Services</h1>
+                    <h1>What We Offer</h1>
                 </div>
             </div>
             <div class="service-hero-container">
                 <div class="service-box">
-                    <i class="fas fa-user-cog"></i>
-                    <h1>Strategy Planning</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae qui ad, rem nulla repellat
-                        delectus.</p>
+                    <img src="./images/development.png" alt="Custom Software Development icon">
+                    <h1>Custom Software Development</h1>
+                    <p>We create tailored software solutions that align with your business goals. Our expert developers design web and mobile apps to boost efficiency and enhance customer experience, ensuring seamless functionality and scalability.</p>
                 </div>
                 <div class="service-box">
-                    <i class="fas fa-paste"></i>
-                    <h1>Insureance Services </h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae qui ad, rem nulla repellat
-                        delectus.</p>
+                    <img src="./images/automation.png" alt="Business Process Automation icon">
+                    <h1>Business Process Automation</h1>
+                    <p>Streamline your operations with our business process automation services. We digitize workflows to improve productivity, reduce errors, and save time, offering customized solutions from CRM integrations to inventory management.</p>
                 </div>
                 <div class="service-box">
-                    <i class="fas fa-user-tie"></i>
-                    <h1>Audit & Evaluation</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae qui ad, rem nulla repellat
-                        delectus.</p>
+                    <img src="./images/compass.png" alt="Custom Software Development icon">
+                    <h1>Digital Transformation Consulting</h1>
+                    <p>Navigate technology adoption with our digital transformation consulting. We evaluate your digital infrastructure, pinpoint areas for improvement, and develop a strategic roadmap for cloud transitions, AI solutions, and workflow optimization to keep your business competitive.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- best section  -->
-    <section id="best">
+    <!-- Best Services Section -->
+    <!-- <section id="best">
         <div class="best-container">
             <div class="best-hero-container">
                 <div class="best-box">
-                    <img src="./images/xabout.png.pagespeed.ic.psBiOR1vDg.webp" alt="">
+                    <img src="./images/best_service.webp" alt="About our services">
                 </div>
                 <div class="best-box">
-                    <h3>OUR TOP SERVICES</h3>
-                    <h1>Our Best Services</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eos, ea quia fuga sit quis
-                        ipsa ullam officiis tenetur soluta exercitationem quaerat! Ex modi, non sed minus obcaecati eum
-                        recusandae sequi id. Voluptas iusto recusandae dolores accusantium, doloribus odit placeat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nesciunt in adipisci aliquid
-                        aliquam corrupti aperiam pariatur veniam libero dolorum mollitia quod, nihil, atque nulla,
-                        dolorem et. In, quos laborum.</p>
+                    <h3>OUR BEST SERVICES</h3>
+                    <h1>Why Choose Our Digitalization Services?</h1>
+                    <p>At Zyroux, we provide more than just technology solutions — we empower businesses to independently manage their new systems. Our approach is built on a phased implementation process, ensuring a smooth transition to digital solutions. We stand out by offering comprehensive training for your staff, ensuring long-term success without heavy reliance on external support.</p>
+                    <h2>What Makes Us Special?</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Custom development teams built around your specific needs and goals</li>
+                        <li><i class="fas fa-check"></i>Expert Consulting Services from a Specialist with Over 10 Years of Industry Experience</li>
+                        <li><i class="fas fa-check"></i>A focus on end-to-end digitalization, from assessment to implementation and training</li>
+                        <li><i class="fas fa-check"></i>Ongoing post-implementation support to ensure your systems run smoothly and evolve with your business.
+                        </li>
+                    </ul>
                     <div class="primary-btn">
-                        <a href="#">MORE ABOUT US</a>
+                        <a href="https://yourwebsite.com/about">MORE ABOUT US</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- study section  -->
-    <section id="study">
+    </section> -->
+
+    <!-- About us Section -->
+    <!-- <section id="about">
+        <div class="about-container">
+            <div class="about-content-container">
+                <div class="about-content">
+                    <h3>ABOUT US</h3>
+                    <h1>Who We Are</h1>
+                </div>
+            </div>
+            <div class="about-hero-container">
+                <div class="about-box">
+                    <h1>Our Mission</h1>
+                    <p>We aim to help businesses of all sizes unlock their potential through technology-driven solutions. By providing custom development teams, we empower organizations to thrive in the digital era.</p>
+                </div>
+                <div class="about-box">
+                    <h1>Our Vision</h1>
+                    <p>We envision a future where every business, regardless of size, has access to the latest digital tools and automation technology to optimize operations and drive success.</p>
+                </div>
+                <div class="about-box">
+                    <h1>Our Values</h1>
+                    <p>At Zyroux, we value transparency, quality, and empowerment. Our goal is to provide solutions that not only improve your business operations but also equip your team with the skills to maintain and expand upon them.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Case Study Section -->
+    <!-- <section id="study">
         <div class="study-container">
             <div class="study-main-container">
                 <div class="study-content-container">
                     <div class="study-content">
-                        <h3>OUR PORTFOLIOS OF CASES</h3>
-                        <h1>Featured Case Study</h1>
+                        <h3>OUR PORTFOLIO</h3>
+                        <h1>Featured Case Studies</h1>
                     </div>
                 </div>
                 <div class="study-hero-container">
                     <div class="study-box">
                         <div class="study-mini-box">
-                            <img src="./images/xservices1.png.pagespeed.ic.OmEIaJ0V84.webp" alt="">
-                            <p>Planning</p>
-                            <h1>Within the construction industry as their overdraft</h1>
+                            <img src="successful-planning-construction.png" alt="Successful planning in the construction industry">
+                            <p>Digitalization</p>
+                            <h1>Optimizing Planning in the Construction Industry</h1>
                         </div>
                         <div class="study-mini-box">
-                            <img src="./images/xservices2.png.pagespeed.ic.epOIfYKPDZ.webp" alt="">
-                            <p>Planning</p>
-                            <h1>Within the construction industry as their overdraft</h1>
+                            <img src="overdraft-management.png" alt="Overdraft management case study">
+                            <p>Automation</p>
+                            <h1>Automating Overdraft Management in High-Stakes Finance</h1>
                         </div>
                     </div>
+                    
                     <div class="study-box">
                         <div class="study-mini-box">
-                            <img src="./images/xservices3.png.pagespeed.ic.CusU7EAYPv.webp" alt="">
-                            <p>Planning</p>
-                            <h1>Within the construction industry as their overdraft</h1>
+                            <img src="audit-retail-industry.png" alt="Audit case study in retail industry">
+                            <p>Compliance</p>
+                            <h1>Streamlining Compliance Audits for Retail Chains</h1>
                         </div>
                         <div class="study-mini-box">
-                            <img src="./images/xservices4.png.pagespeed.ic.KpAluP4wL3.webp" alt="">
-                            <p>Planning</p>
-                            <h1>Within the construction industry as their overdraft</h1>
+                            <img src="strategic-financial-planning.png" alt="Financial planning for startups">
+                            <p>Financial</p>
+                            <h1>Strategic Financial Planning for Growing Startups</h1>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- testimonal section  -->
-    <section id="testimonal">
+    <!-- Testimonial Section -->
+    <!-- <section id="testimonal">
         <div class="testimonal-container">
             <div class="testimonal-hero-container">
                 <div class="testimonal-box">
                     <i class="fas fa-quote-right"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam doloribus omnis quod animi hic
-                        iusto quis vitae cumque reiciendis numquam dolore, aut obcaecati nobis ducimus itaque qui
-                        blanditiis! Error, iusto.</p>
-
+                    <p>Thanks to Project 13, our business has seen tremendous growth. Their strategic approach to problem-solving is unparalleled.</p>
                 </div>
                 <div class="testimonal-box testimonal-box2">
                     <div class="testimonal-img-box">
-                        <img src="./images/xHomepage_testi.png.pagespeed.ic.IdmhPM2NkE.webp" alt="">
+                        <img src="testimonial-kailash-kumar.png" alt="Testimonial by Kailash Kumar">
                     </div>
                     <div class="testimonal-img-box">
-                        <h1>Kailash kumar</h1>
+                        <h1>Kailash Kumar</h1>
                         <p>Founder</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- feature section  -->
-    <section id="Contact">
-        <div class="calendly-inline-widget" data-url="https://calendly.com/ruizigor16/30min" style="min-width:320px;height:700px;"></div>
-    </section>
-    
-    <!-- partner section  -->
-    <section id="partner">
+    <!-- Contact Section -->
+    <!-- <section id="contact">
+        <div class="calendarheader">
+            <h1>Ready to Grow Your Business?</h1>
+            <p>Let's schedule a call to discuss your business goals and challenges.</p>
+        </div>
+        <div class="calendar">
+            <div class="calendly-inline-widget" data-url="https://calendly.com/ruizigor16/30min" style="min-width:320px;height:700px;"></div>
+        </div>
+    </section> -->
+
+    <!-- Partner Section -->
+    <!-- <section id="partner">
+        <div class="content">
+            <h3>OUR PARTNERS</h3>
+            <h1>Trusted by Leading Brands</h1>
+        </div>
         <div class="partner-container">
             <div class="partner-box">
-                <img src="./images/xbrand2.png.pagespeed.ic.ububUX0_Gy (1).webp" alt="">
+                <img src="./images/frobes.webp" alt="Brand partner 1">
             </div>
             <div class="partner-box">
-                <img src="./images/xbrand2.png.pagespeed.ic.ububUX0_Gy.webp" alt="">
+                <img src="./images/tactics.webp" alt="Brand partner 2">
             </div>
             <div class="partner-box">
-                <img src="./images/xbrand3.png.pagespeed.ic.0EiTa7eog5.webp'" alt="">
+                <img src="./images/favana.webp" alt="Brand partner 3">
             </div>
             <div class="partner-box">
-                <img src="./images/xbrand4.png.pagespeed.ic.qgj0MhrWBb.webp" alt="">
-            </div>
-            <div class="partner-box">
-                <img src="./images/xbrand5.png.pagespeed.ic.uNANIOjkZ8.webp" alt="">
+                <img src="./images/cara.webp" alt="Brand partner 4">
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- footer section  -->
-    <footer>
+    <!-- Footer -->
+    <!-- <footer>
         <div class="footer-container">
             <div class="footer-main-container">
                 <div class="footer-box footer-box1">
-                    <h2>Cunsulting <span>.</span> </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <h1>78782 <span>7632</span> </h1>
-                    <p>lka@gmail.com</p>
+                    <h2>Consulting<span>.</span></h2>
+                    <p>Providing expert consulting and custom solutions for businesses worldwide.</p>
+                    <h1>(787) 827-7632</h1>
+                    <p>support@example.com</p>
                 </div>
                 <div class="footer-box footer-box2">
-                    <h3>Location</h3>
-                    <p>Advanced</p>
-                    <p>Managenment</p>
-                    <p>Corporate</p>
-                    <p>Custumer</p>
-                    <p>Information</p>
+                    <h3>Our Services</h3>
+                    <p>Strategy Planning</p>
+                    <p>Corporate Management</p>
+                    <p>Customer Insights</p>
+                    <p>Market Research</p>
                 </div>
                 <div class="footer-box footer-box3">
-                    <h3>EXPLORE</h3>
-                    <p>Cookies</p>
+                    <h3>Explore</h3>
                     <p>Home</p>
-                    <p>About us</p>
+                    <p>About Us</p>
+                    <p>Services</p>
+                    <p>Blog</p>
                 </div>
                 <div class="footer-box footer-box4">
-                    <h3>LOCATION</h3>
-                    <p>Subscribe</p>
-                    <p>Wordlwide</p>
+                    <h3>Stay Connected</h3>
+                    <p>Subscribe to our newsletter for the latest updates</p>
                 </div>
             </div>
             <div class="footer-last">
-                <p>Copyright  &copy; 2024 All right reserved - <span>Zyroux</span></p>
+                <p>Copyright &copy; 2024 All rights reserved - <span>Zyroux</span></p>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
