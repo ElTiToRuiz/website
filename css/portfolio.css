@@ -1,6 +1,6 @@
 /* General Styling */
 #portfolio{
-    background-color: var(--secondary-color);
+    background: linear-gradient(180deg, #060604, #333, #060604);
 }
 
 .portfolio-container {
@@ -45,6 +45,7 @@
 .portfolio-container h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: var(--secondary-color);
 }
 
 /* Carousel Styles */

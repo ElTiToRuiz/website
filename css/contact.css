@@ -1,6 +1,11 @@
-
 /* contact section */
-#contact {
+#contact{
+    background: linear-gradient(180deg, #060604, #fff);
+    padding: 100px;
+    padding-bottom: 200px;
+}
+
+.contact-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -9,7 +14,7 @@
     margin: 40px auto;
 }
 
-#contact .calendarheader{
+.contact-container .calendarheader{
     padding: 10px;
     border-radius: 8px 8px 0 0;
     display: flex;
@@ -18,16 +23,16 @@
     align-items: center;
 }
 
-#contact h1 {
+.contact-container h1 {
     text-align: center;
     color: #333;
 }
 
-#contact .calendar {
+.contact-container .calendar {
     text-align: center;
     margin-top: 20px;
 }
 
-#contact .calendar a:hover {
+.contact-container .calendar a:hover {
     background-color: #0056b3;
 }
