@@ -1,0 +1,84 @@
+/* header  */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 130vh;
+}
+
+header #backgroundVideo, .hero video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.header-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.header-hero-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    width: 60%;
+}
+
+.header-content h3 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    color: var(--special-fonts-color);
+    font-weight: 600;
+}
+
+.header-content h3::before {
+    content: '';
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-family: var(--heading-sarabun-fonts-family);
+    font-weight: bolder;
+    color: var(--secondary-color);
+}
+
+.header-content p {
+    margin: 1rem 0rem;
+    width: 80%;
+    line-height: 1.5;
+    color: var(--secondary-color);
+}
+
+.primary-btn {
+    margin: 4rem 0rem;
+}
+
+.primary-btn a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    background-color: var(--btn-color-background);
+    padding: 15px 35px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.primary-btn a:hover {
+    background-color: var(--secondary-color);
+    color: black;
+}

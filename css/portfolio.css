@@ -1,0 +1,144 @@
+/* General Styling */
+#portfolio{
+    background-color: var(--secondary-color);
+}
+
+.portfolio-container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.portfolio-content-container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.portfolio-content {
+    width: 100%;
+    height: 100%;
+    margin-top: 4rem;
+}
+
+.portfolio-container h3 {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    color: var(--special-fonts-color);
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.portfolio-container h3::before {
+    content: '';
+    flex: 1 1;
+    border-bottom: 2px solid;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.portfolio-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Carousel Styles */
+.portfolio-carousel {
+    perspective: 1200px; 
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    background-color: #18191b;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1rem;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
+    z-index: 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.carousel-item p {
+    color: #66bb6a;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.carousel-item h1 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Estilos para el item activo */
+.carousel-item.active {
+    opacity: 1;
+    transform: scale(1.2); /* El ítem activo es un 20% más grande */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* Añadimos más sombra al ítem activo */
+    z-index: 3;
+    cursor: pointer;
+}
+
+/* Estilos para los items vecinos */
+.carousel-item.left,
+.carousel-item.right {
+    opacity: 0.8; /* Los vecinos son visibles pero menos que el ítem activo */
+    transform: scale(0.9); /* El tamaño es un poco más pequeño */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+    z-index: 2;
+}
+
+/* Estilos para los items alejados */
+.carousel-item.far-left, 
+.carousel-item.far-right {
+    opacity: 0.6; /* Menos visibles */
+    transform: scale(0.7); /* Más pequeños aún */
+    z-index: 1;
+}
+
+/* Efecto hover para el ítem activo */
+.carousel-item.active:hover {
+    transform: scale(1.3); /* Agrandamos más el ítem cuando se hace hover */
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6); /* Aumentamos el box-shadow en hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para los items vecinos */
+.carousel-item.left:hover,
+.carousel-item.right:hover {
+    transform: scale(1.05); /* Crecemos un poco los vecinos en hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Añadimos más sombra en hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
