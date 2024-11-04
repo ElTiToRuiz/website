@@ -30,6 +30,9 @@ footer {
 .footer-box1 .dot{
     color: orangered;
 }
+.footer-box1 p{
+    padding: 0.5rem 0rem;
+}
 
 .footer-box2 h3, .footer-box3 h3 {
     padding: 1rem 0rem;
