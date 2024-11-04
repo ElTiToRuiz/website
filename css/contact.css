@@ -5,16 +5,16 @@
     padding-bottom: 200px;
 }
 
-.contact-container {
+#contact .contact-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 800px;
     margin: 40px auto;
 }
 
-.contact-container .calendarheader{
+#contact .contact-container .calendarheader{
     padding: 10px;
     border-radius: 8px 8px 0 0;
     display: flex;
@@ -23,16 +23,23 @@
     align-items: center;
 }
 
-.contact-container h1 {
+#contact .contact-container h1 {
     text-align: center;
-    color: #333;
+    color: #ff4081;
+    font-size: 2rem;
 }
 
-.contact-container .calendar {
+#contact .contact-container p {
     text-align: center;
-    margin-top: 20px;
+    padding: 5px;
 }
 
-.contact-container .calendar a:hover {
-    background-color: #0056b3;
+#contact .contact-container p:nth-child(1) {
+    text-align: center;
+    margin-top: 0px;
+} 
+
+#contact .contact-container .calendar {
+    text-align: center;
+    padding: 10px;
 }

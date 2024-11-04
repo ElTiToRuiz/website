@@ -1,0 +1,110 @@
+#special-offer{
+    background: linear-gradient(180deg, #060604, #000, #060604);
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+#special-offer .banner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#special-offer .banner-header {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+#special-offer .banner-title {
+    font-size: 5em;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+#special-offer .banner-subtitle {
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #666;
+    margin-top: 10px;
+}
+
+#special-offer  .banner-highlight {
+    color: #ff4081;
+}
+
+#special-offer .countdown-timer {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#special-offer .countdown-timer__item {
+    margin: 0 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#special-offer .countdown-timer__value {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+#special-offer .countdown-timer__label {
+    font-size: 2rem;
+    color: #fff;
+}
+
+#special-offer .banner-cta {
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+}
+
+#special-offer .cta-scarcity {
+    font-size: 3rem;
+    color: #ff4081;
+    margin-bottom: 30px;
+}
+
+#special-offer .cta-value {
+    font-size: 2.5rem;
+}
+
+#special-offer .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#special-offer .cta-button:hover {
+    background-color: #e91e63;
+}
+
+#special-offer .banner-footer {
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+    color: #fff;
+    font-size: 1.3rem;
+}

@@ -1,0 +1,88 @@
+#smallBanner{
+    width: 100%;
+    height: min-content;
+    background: linear-gradient(0deg, #060604, #000, #060604 );;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+#smallBanner .announcement-banner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+#smallBanner .announcement-title{
+    font-size: 2.5em;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #ff4081;
+}
+
+#smallBanner .text{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 15px;
+}
+
+
+#smallBanner .announcement-info, 
+#smallBanner .announcement-value{
+    font-size: 1.2em;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+#smallBanner .banner-footer{
+    margin-top: -5px;
+    padding: 5px;
+    font-style: italic;  
+    color: #666;
+    text-align: center;
+}
+
+#smallBanner:hover{
+    background: #ff4081;
+    transition: background 0.3s;
+    box-shadow: 0 4px 20px rgba(255, 64, 129, 0.2);
+}
+
+#smallBanner:hover .announcement-title,
+#smallBanner:hover .timer .countdown-timer span{
+    color: #1e1e1e;
+}
+
+#smallBanner .announcement-timer{
+    color: #fff;
+}
+
+#smallBanner .countdown-timer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#smallBanner .countdown-timer__item {
+    margin: 0 10px;
+    text-align: center;
+}
+
+#smallBanner .countdown-timer__value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+#smallBanner .countdown-timer__label {
+    font-size: 0.875rem;
+    color: #fff;
+}

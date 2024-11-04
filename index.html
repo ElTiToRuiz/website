@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zyroex</title>
-    <meta name="description" content="Project 13 Development offers expert consulting and custom technology solutions for startups and SMEs, empowering businesses to grow through digital transformation.">
+    <meta property="og:title" content="Zyroex" />
+    <meta property="og:description" content="Zyroex offers expert consulting and custom technology solutions for startups and SMEs, empowering businesses to grow through digital transformation." />
+    <meta property="og:image" content="https://zyroex.com/logo.png" />
+    <meta property="og:url" content="https://zyroex.com" />
+    <meta name="description" content="Zyroex offers expert consulting and custom technology solutions for startups and SMEs, empowering businesses to grow through digital transformation.">
     <meta name="keywords" content="consulting, digital solutions, business growth, startups, SMEs, strategy planning, audit, insurance, digital transformation">
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <!-- Structured Data for SEO -->
@@ -52,6 +56,7 @@
             });
         }
     </script>
+    <script src="./script/countdown.js" defer></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -82,6 +87,53 @@
         </div>
     </nav>
 
+    <!-- Announcement Banner -->
+    <section id="smallBanner">
+        <div class="announcement-banner" onclick="goSpecialOffer()">
+            <div class="textContainer">
+                <p class="announcement-title">
+                    🎉 <strong>
+                        Flashback Sales Week is Here! 
+                    </strong>🎉
+                </p>
+                <div class="text">
+                    <span class="announcement-info">
+                        ⏳ Only <strong>5 Spots</strong> Available! 
+                    </span>
+                    <span class="announcement-value">
+                        🌟 Claim Your Free Digital Roadmap (Valued at <strong>+€1000</strong>)!
+                    </span>
+                </div>
+            </div>
+            <div class="timer">
+                <p class="announcement-timer">
+                    Hurry! Offer ends in:
+                </p>
+                <div class="countdown-timer" role="timer" aria-live="polite">
+                    <div class="countdown-timer__item" aria-label="Days">
+                        <span class="countdown-timer__value" id="days">00</span>
+                        <span class="countdown-timer__label">Days</span>
+                    </div>
+                    <div class="countdown-timer__item" aria-label="Hours">
+                        <span class="countdown-timer__value" id="hours">00</span>
+                        <span class="countdown-timer__label">Hours</span>
+                    </div>
+                    <div class="countdown-timer__item" aria-label="Minutes">
+                        <span class="countdown-timer__value" id="minutes">00</span>
+                        <span class="countdown-timer__label">Minutes</span>
+                    </div>
+                    <div class="countdown-timer__item" aria-label="Seconds">
+                        <span class="countdown-timer__value" id="seconds">00</span>
+                        <span class="countdown-timer__label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-footer">
+            <p>Because ... even unicorns deserve a day off 🦄</p>
+        </div>
+    </section>
+
     <!-- Header -->
     <header id="hero">
         <div class="header-container">
@@ -101,10 +153,48 @@
         </div>
     </header>
 
+    <!-- special offer -->
+    <section id="special-offer" onclick="goSpecialOffer()">
+        <div class="banner">
+            <div class="container">
+                <div class="banner-header">
+                    <h1 id="countdown-title" class="banner-title">
+                        🚀 <strong class="banner-highlight">Flashback Sales Week</strong> 🚀
+                    </h1>
+                    <p class="banner-subtitle">Hurry! This exclusive offer ends in:</p>
+                </div>
     
-    <!-- <section class="stalactite-container">
-        <div class="stalactite"></div>
-    </section> -->
+                <div class="countdown-timer" role="timer" aria-live="polite">
+                    <div class="countdown-timer__item" aria-label="Days">
+                        <span class="countdown-timer__value" id="days">00</span>
+                        <span class="countdown-timer__label">Days</span>
+                    </div>
+                    <div class="countdown-timer__item" aria-label="Hours">
+                        <span class="countdown-timer__value" id="hours">00</span>
+                        <span class="countdown-timer__label">Hours</span>
+                    </div>
+                    <div class="countdown-timer__item" aria-label="Minutes">
+                        <span class="countdown-timer__value" id="minutes">00</span>
+                        <span class="countdown-timer__label">Minutes</span>
+                    </div>
+                    <div class="countdown-timer__item" aria-label="Seconds">
+                        <span class="countdown-timer__value" id="seconds">00</span>
+                        <span class="countdown-timer__label">Seconds</span>
+                    </div>
+                </div>
+    
+                <div class="banner-cta">
+                    <p class="cta-scarcity"><strong>Only <span class="banner-highlight">5 Spots</span> Left!</strong></p>
+                    <p class="cta-value">Claim Your <strong class="banner-highlight">Free Digital Roadmap</strong> (worth over €1000)!</p>
+                    <a href="#" class="cta-button">Book Your Free Consultation Now</a>
+                </div>
+    
+                <div class="banner-footer">
+                    <p>Because ... even unicorns deserve a day off 🦄</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Services Section -->
     <section id="service">
@@ -258,12 +348,59 @@
         </div>
     </section>
 
+    <section id="smallBanner" class="beforeContact">
+        <div class="announcement-banner" onclick="goSpecialOffer()">
+            <div class="textContainer">
+                <p class="announcement-title">
+                    🎉 <strong>
+                        Flashback Sales Week is Here! 
+                    </strong>🎉
+                </p>
+                <div class="text">
+                    <span class="announcement-info">
+                        ⏳ Only <strong>5 Spots</strong> Available! 
+                    </span>
+                    <span class="announcement-value">
+                        🌟 Claim Your Free Digital Roadmap (Valued at <strong>+€1000</strong>)!
+                    </span>
+                </div>
+            </div>
+            <div class="timer">
+                <p class="announcement-timer">
+                    Hurry! Offer ends in:
+                </p>
+                <div class="countdown-timer" role="timer" aria-live="polite">
+                    <div class="countdown-timer__item" aria-label="Days">
+                        <span class="countdown-timer__value" id="days">00</span>
+                        <span class="countdown-timer__label">Days</span>
+                    </div>
+                    <div class="countdown-timer__item" aria-label="Hours">
+                        <span class="countdown-timer__value" id="hours">00</span>
+                        <span class="countdown-timer__label">Hours</span>
+                    </div>
+                    <div class="countdown-timer__item" aria-label="Minutes">
+                        <span class="countdown-timer__value" id="minutes">00</span>
+                        <span class="countdown-timer__label">Minutes</span>
+                    </div>
+                    <div class="countdown-timer__item" aria-label="Seconds">
+                        <span class="countdown-timer__value" id="seconds">00</span>
+                        <span class="countdown-timer__label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-footer">
+            <p>Because ... even unicorns deserve a day off 🦄</p>
+        </div>
+    </section>
+    
     <!-- Contact Section -->
     <section id="contact">
         <div class="contact-container">
             <div class="calendarheader">
-                <h1>Ready to Grow Your Business?</h1>
-                <p>Let's schedule a call to discuss your business goals and challenges.</p>
+                <h1>Take Advantage of Flashback Sales Week!</h1>
+                <p>Let's schedule a call to discuss your business goals and challenges!</p>
+                <p>Together, we can unlock your potential and make the most of this exclusive offer!</p>
             </div>
             <div class="calendar">
                 <div class="calendly-inline-widget" data-url="https://calendly.com/ruizigor16/30min" style="min-width:320px;height:700px;"></div>
@@ -309,7 +446,7 @@
                         <li><a href="#">Strategy Planning</a></li>
                         <li><a href="#">Software Development</a></li>
                         <li><a href="#">Process Automating</a></li>
-                        <li><a href="#">Digital Transformatio</a></li>
+                        <li><a href="#">Digital Transformation</a></li>
                     </ul>
                 </div>
                 <div class="footer-box footer-box3">
